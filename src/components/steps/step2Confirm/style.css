@@ -1,0 +1,91 @@
+.step2 {
+  background-color: #e8f9ff;
+  border: 2px dashed rgb(0, 81, 109);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-top: 50px;
+}
+
+.step2:before,
+.step2:after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border: 2px solid #009bb0;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.step2:before {
+  left: -8px;
+}
+
+.step2:after {
+  right: -8px;
+}
+
+.step2 h1 {
+  text-align: center;
+  color: #031c24;
+  font-weight: 900;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+a-form-item {
+  margin-bottom: 10px;
+}
+
+a-form-item label {
+  font-weight: bold;
+  color: #00516d;
+}
+
+input {
+  border: none !important;
+  background-color: #f2fbff !important;
+  font-weight: bold;
+  color: #333;
+}
+
+input:focus {
+  outline: none !important;
+  border-color: transparent !important;
+  box-shadow: none;
+}
+
+a-input-number {
+  width: 100%;
+  font-weight: bold;
+  background-color: #f2fbff;
+}
+
+a-button {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background-color: #009bb0;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+a-button:hover {
+  background-color: #007e92;
+  color: #f2fbff;
+}
+.flex {
+  gap: 30px;
+}

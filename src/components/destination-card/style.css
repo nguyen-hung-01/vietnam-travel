@@ -1,0 +1,129 @@
+.item {
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid #0098be43;
+  transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+}
+.item:hover {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.205);
+  transform: translateY(-2px);
+}
+.item:hover img {
+  transform: scale(1.2);
+}
+.img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.item:hover .img::before {
+  transform: translateY(0);
+}
+.img::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-100%);
+  transition: 0.7s ease-in-out;
+  box-shadow: 0 5px 20px 10px #ffffff7e;
+  background-color: #ffffff1d;
+  z-index: 2;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+  object-fit: cover;
+  object-position: center;
+}
+.name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #003745;
+  margin-top: 15px;
+}
+.name:hover {
+  color: #0098be;
+  text-decoration: underline;
+}
+.info {
+  padding: 0 15px;
+}
+.rating {
+  margin-top: 5px;
+  display: flex;
+  gap: 5px;
+}
+.rating i {
+  color: rgb(242, 242, 0);
+  font-size: 14px;
+}
+.price {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgba(255, 0, 0, 0.693);
+  margin-top: 10px;
+}
+.price span {
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+  opacity: 0.6;
+  display: inline-block;
+}
+.btn a {
+  width: 200px;
+  height: 50px;
+  display: inline-block;
+  border: 1px solid #00576d48;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  margin: 15px 0;
+}
+.btn a span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  font-weight: 700;
+  transition: 0.3s ease-in-out;
+  color: #005f77;
+}
+.btn a span i {
+  transition: 0.3s ease-in-out;
+  color: #005f77;
+  font-size: 15px;
+}
+.btn a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0098be;
+  transform: translateX(-100%);
+  transition: 0.3s ease-in-out;
+}
+.btn a:hover::before {
+  transform: translateX(0);
+  border-radius: 30px;
+}
+.btn a:hover span {
+  color: #fff;
+}
+.btn a:hover span i {
+  color: #fff;
+}

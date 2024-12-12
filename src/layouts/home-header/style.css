@@ -1,0 +1,56 @@
+header {
+  background-color: rgba(0, 0, 0, 0.381);
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid#aaaaaa55;
+  transition: 0.6s ease-in-out;
+  backdrop-filter: blur(30px);
+}
+header.sticky {
+  height: 90px;
+  background-color: rgb(0, 0, 0);
+}
+header.sticky img {
+  width: 160px;
+}
+.logo img {
+  width: 180px;
+  transition: 0.6s ease-in-out;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.menu a {
+  display: inline-block;
+  padding: 5px 10px;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  font-weight: 600;
+}
+.menu a:hover {
+  color: #18d1ff;
+  text-shadow: 0 0 3px #18d1ff;
+}
+.menu a:hover::before {
+  width: 100%;
+}
+.menu a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 2px;
+  transform: translateX(-50%);
+  width: 0;
+  background-color: #18d1ff;
+  transition: 0.3s ease-in-out;
+}

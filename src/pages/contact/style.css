@@ -1,0 +1,160 @@
+.main-contact {
+  margin: 80px 0;
+}
+.main-contact .title {
+  text-align: center;
+  margin: 40px 0;
+}
+.main-contact .info {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.main-contact .icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #113d48;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+}
+.main-contact .item {
+  padding: 20px;
+  gap: 20px;
+  width: 350px;
+  border: 1px solid #113d48;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+.main-contact .name {
+  color: #113d48;
+  font-size: 24px;
+  font-weight: 700;
+}
+.main-contact p {
+  font-size: 16px;
+  font-weight: 700;
+  opacity: 0.6;
+}
+.overlay {
+  background-color: #03273064;
+}
+form {
+  background-color: #fff;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 700px;
+  transform: translateY(-50%);
+  border-radius: 25px;
+}
+.main-form > div {
+  border: 1px solid #113d486b;
+  border-radius: 10px;
+  height: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-form > div.note {
+  height: 200px;
+  align-items: flex-start;
+  padding: 20px;
+}
+.main-form > div.note i {
+  margin-right: 0;
+}
+.main-form textarea {
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+.main-form i {
+  margin-right: 20px;
+  opacity: 0.6;
+}
+.main-form input {
+  padding: 0 20px;
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+button {
+  background-color: #113d48;
+  height: 65px;
+  width: 200px;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  margin-top: 40px;
+  border-radius: 30px;
+  color: white;
+}
+button span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+button:hover::before {
+  transform: translateX(0);
+  border-radius: 30px;
+}
+button::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  transform: translateX(-100%);
+  transition: 0.5s ease-in-out;
+  background-color: var(--primary-color);
+  z-index: 1;
+}
+.form {
+  position: relative;
+  height: 900px;
+  margin-bottom: 200px;
+}
+.form .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+}
+.form > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.form .container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+form h2 {
+  font-weight: 800;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+form .main-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.main-form > div {
+  overflow: hidden;
+}

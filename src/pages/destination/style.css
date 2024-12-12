@@ -1,0 +1,90 @@
+.container {
+  padding: 80px 0;
+  position: relative;
+}
+.search {
+  margin-bottom: 50px;
+}
+.search input {
+  width: 500px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #dcf9ff;
+  border: none;
+  box-shadow: inset 0 2px 5px #0000001e;
+}
+.search button {
+  background-color: #00b4d8;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-left: 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 2px 3px 4px #006b80;
+  transition: 0.3s ease-in-out;
+}
+.search button:hover {
+  transform: translateY(2px);
+  box-shadow: 1px 2px 3px #006b80;
+}
+.search input:focus {
+  border: none;
+  outline: none;
+}
+.main-destination .title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #004553;
+  margin-bottom: 20px;
+}
+.destinations {
+  width: 72%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.destinations:hover > :not(:hover) {
+  opacity: 0.2;
+}
+.navbar {
+  position: absolute;
+  top: 250px;
+  right: 0;
+  width: 25%;
+}
+.navbar .nav-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: #006b80;
+  margin-bottom: 20px;
+}
+.navbar > div {
+  border: 1px solid #006b8054;
+  border-radius: 15px;
+  padding: 20px 15px;
+  padding-bottom: 50px;
+}
+.navbar > div li {
+  border-bottom: 1px solid #00202621;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.navbar > div li i {
+  color: #006b80;
+  font-size: 14px;
+}
+.navbar > div a {
+  color: #636363;
+  font-weight: 700;
+  transition: 0.3s ease-in-out;
+}
+.navbar > div a:hover {
+  color: #006b80;
+}
+.active {
+  color: rgba(237, 0, 0, 0.463);
+  font-weight: 700;
+}

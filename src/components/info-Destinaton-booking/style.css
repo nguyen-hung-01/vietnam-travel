@@ -1,0 +1,167 @@
+.intro {
+  display: flex;
+  gap: 50px;
+}
+.container .booking {
+  padding: 80px 0;
+}
+.intro .img {
+  flex: 1;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.intro img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.info {
+  width: 60%;
+}
+.info .name {
+  font-weight: 700;
+  font-size: 35px;
+  color: rgb(0, 57, 78);
+}
+.info .desc {
+  font-weight: 600;
+  opacity: 0.6;
+  line-height: 30px;
+}
+.booking h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 800;
+  color: rgb(0, 25, 80);
+}
+.rating {
+  display: flex;
+  gap: 5px;
+}
+.rating i {
+  color: rgb(242, 242, 0);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.booking :global(.ant-select-selector),
+.booking :global(.ant-picker-range) {
+  padding: 11px 13px !important;
+  height: auto !important;
+  width: 100% !important;
+}
+.booking :global(.ant-select-selector:hover),
+.booking :global(.ant-picker-range:hover),
+.booking :global(.ant-input-number:hover) {
+  border-color: #35d7ff !important;
+}
+.booking :global(.ant-select-selector:focus),
+.booking :global(.ant-picker-range:focus),
+.booking :global(.ant-input-number:focus) {
+  border-color: #35d7ff !important;
+  box-shadow: 0 0 5px #009efd;
+}
+.booking :global(.ant-picker-input > input) {
+  padding: 4px 0 !important;
+}
+.booking :global(.ant-form-item),
+.booking :global(.ant-input-number) {
+  width: 100%;
+}
+.booking :global(.ant-input-number input) {
+  padding: 3px 0 !important;
+}
+.booking :global(.ant-input-number-input-wrap) {
+  padding: 10px 13px !important;
+  height: auto !important;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+button {
+  width: 100%;
+  margin-top: 40px;
+  height: 50px;
+  font-size: 17px;
+  font-weight: 700;
+  background-color: #008ea7;
+  color: #fff;
+}
+button:hover {
+  color: #fff !important;
+}
+.info-destination {
+  display: flex;
+  gap: 50px;
+}
+.info-destination .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.info-destination .left {
+  width: 600px;
+  height: 400px;
+}
+.info-destination img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.info-destination .name {
+  color: #003542;
+  font-size: 36px;
+  font-weight: 800;
+}
+.info-destination .name span {
+  margin-right: 10px;
+}
+.info-destination .rating {
+  font-size: 17px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.info-destination .rating .star {
+  margin-left: 10px;
+}
+.info-destination .rating i {
+  color: rgba(255, 255, 0, 0.753);
+  font-size: 14px;
+  margin-right: 5px;
+}
+.info-destination .price {
+  color: rgba(255, 0, 0, 0.609);
+  font-weight: 900;
+  font-size: 37px;
+  margin-top: 20px;
+}
+.info-destination .price span {
+  font-size: 18px;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.info-destination .category,
+.info-destination .transportation {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+.info-destination .category span,
+.info-destination .transportation span {
+  padding: 6px 25px;
+  background-color: #00000027;
+  border-radius: 7px;
+  font-size: 15px;
+}
+.info-destination .btn a {
+  margin: 0;
+}

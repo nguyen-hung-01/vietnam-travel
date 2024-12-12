@@ -1,0 +1,158 @@
+.price span {
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+  opacity: 0.6;
+  display: inline-block;
+}
+.btn a {
+  width: 350px;
+  height: 60px;
+  display: inline-block;
+  border: 1px solid #00576d48;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  margin: 15px 0;
+}
+.btn a span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  font-weight: 700;
+  transition: 0.3s ease-in-out;
+  color: #005f77;
+}
+.btn a span i {
+  transition: 0.3s ease-in-out;
+  color: #005f77;
+  font-size: 15px;
+}
+.btn a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0098be;
+  transform: translateX(-100%);
+  transition: 0.3s ease-in-out;
+}
+.btn a:hover::before {
+  transform: translateX(0);
+  border-radius: 30px;
+}
+.btn a:hover span {
+  color: #fff;
+}
+.btn a:hover span i {
+  color: #fff;
+}
+.container {
+  padding: 100px 0;
+}
+.info-destination {
+  display: flex;
+  gap: 50px;
+}
+.info-destination .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.info-destination .left {
+  width: 600px;
+  height: 400px;
+}
+.info-destination img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.info-destination .name {
+  color: #003542;
+  font-size: 36px;
+  font-weight: 800;
+}
+.info-destination .name span {
+  margin-right: 10px;
+}
+.info-destination .rating {
+  font-size: 17px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.info-destination .rating .star {
+  margin-left: 10px;
+}
+.info-destination .rating i {
+  color: rgba(255, 255, 0, 0.753);
+  font-size: 14px;
+  margin-right: 5px;
+}
+.info-destination .price {
+  color: rgba(255, 0, 0, 0.609);
+  font-weight: 900;
+  font-size: 37px;
+  margin-top: 20px;
+}
+.info-destination .price span {
+  font-size: 18px;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.info-destination .category,
+.info-destination .transportation {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+.info-destination .category span,
+.info-destination .transportation span {
+  padding: 6px 25px;
+  background-color: #00000027;
+  border-radius: 7px;
+  font-size: 15px;
+}
+.info-destination .btn a {
+  margin: 0;
+}
+.desc {
+  margin: 70px 0;
+}
+.desc h5,
+.relate h5 {
+  color: #003542;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.desc p {
+  font-size: 18px;
+  font-weight: 600;
+  opacity: 0.7;
+  line-height: 33px;
+}
+.list-destination {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.relate h5 {
+  margin-bottom: 30px;
+}
+.list-destination:hover > :not(:hover) {
+  opacity: 0.2;
+}

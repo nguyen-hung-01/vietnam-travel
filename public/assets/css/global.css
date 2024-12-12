@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Nunito", serif;
+  background-color: #f2fbff;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 1280px !important;
+  max-width: 1280px !important;
+  margin: auto;
+}
+.sub-title {
+  font-family: "Dancing Script", cursive;
+  font-weight: 500;
+  font-size: 30px;
+  color: #113d48;
+}
+.main-title {
+  font-weight: 700;
+  font-size: 43px;
+  color: #113d48;
+  line-height: 55px;
+}
+.text {
+  font-size: 19px;
+  font-weight: 600;
+  color: #00151a92;
+}

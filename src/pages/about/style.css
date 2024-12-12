@@ -1,0 +1,242 @@
+.intro .item {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.intro .item .icon {
+  border-radius: 50%;
+  background-color: #1ca8cb;
+  color: #fff;
+  height: 80px;
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro .item p {
+  color: #113d48;
+  font-weight: 700;
+  font-size: 25px;
+}
+button {
+  background-color: #113d48;
+  border-radius: 30px;
+  color: white;
+  height: 65px;
+  width: 200px;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  margin-top: 70px;
+}
+button span {
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+}
+button:hover::before {
+  transform: translateX(0);
+  border-radius: 30px;
+}
+button::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  transform: translateX(-100%);
+  transition: 0.5s ease-in-out;
+  background-color: #1ca8cb;
+  z-index: 1;
+}
+.intro img {
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  border: 8px solid #fff;
+}
+.moving {
+  animation: moveSideways 2s infinite alternate;
+}
+@keyframes moveSideways {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(30px);
+  }
+}
+.guide .item:hover .avt img {
+  transform: scale(1.1);
+}
+.guide .item:hover .bg > img {
+  transform: scale(1.1);
+}
+.guide .item {
+  border-radius: 30px;
+  background-color: #e9f6f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  height: 550px;
+  overflow: hidden;
+  text-align: center;
+}
+.guide .item .bg {
+  width: 100%;
+  position: relative;
+}
+.guide .item .avt {
+  border-radius: 50%;
+  border: 5px solid #fff;
+  transform: translateX(-50%);
+  overflow: hidden;
+  left: 50%;
+  bottom: -70%;
+  position: absolute;
+  width: 220px;
+  height: 220px;
+}
+.guide .item .avt img {
+  transition: transform 0.6s ease-in-out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.guide .item .bg > img {
+  transition: transform 0.6s ease-in-out;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+.guide .info {
+  background-color: #fff;
+  border-radius: 20px;
+  transition: 0.5s ease-in-out;
+  padding: 20px;
+  margin: 20px;
+}
+.guide .info .name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #113d48;
+  transition: 0.5s ease-in-out;
+}
+.guide .info .job {
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.6;
+  transition: 0.5s ease-in-out;
+}
+.guide .info .social {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 16px;
+}
+.guide .info .social i {
+  color: #1ca8cb;
+  border-radius: 50%;
+  border: 1px solid #1ca8cb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 33px;
+  height: 33px;
+  font-size: 14px;
+  transition: 0.5s ease-in-out;
+}
+.guide .item:hover .info {
+  background-color: #25b3d6;
+}
+.guide .item:hover .name,
+.guide .item:hover .job {
+  color: #fff;
+  opacity: 1;
+}
+.guide .item:hover .social i {
+  color: #fff;
+
+  border: 1px solid #fff;
+}
+.guide .info .social i:hover {
+  transform: rotate3d(0, 1, 1, 90deg);
+}
+.logo-company img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+.intro {
+  padding: 80px 0;
+}
+.intro .container {
+  display: flex;
+  gap: 50px;
+}
+.intro .left {
+  position: relative;
+  width: 50%;
+}
+.intro .right {
+  width: 50%;
+}
+.intro .left img:first-child {
+  width: 350px;
+  height: 400px;
+  top: 0;
+  left: 0;
+}
+.intro .left img:last-child {
+  width: 400px;
+  height: 300px;
+  bottom: -40px;
+  left: 20px;
+}
+.intro .left img:nth-child(2) {
+  width: 330px;
+  height: 420px;
+  top: 15%;
+  right: 0;
+}
+.intro .right > p {
+  margin-top: 30px;
+}
+.list-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+}
+.guide {
+  position: relative;
+  margin-top: 100px;
+  text-align: center;
+}
+.title {
+  margin-bottom: 50px;
+}
+.list-guide {
+  display: flex;
+  gap: 30px;
+}
+.logo-company {
+  background-color: #fff;
+  padding: 30px 0;
+  margin-bottom: 150px;
+  margin-top: 100px;
+}
+.logo-company .container {
+  display: flex;
+  justify-content: space-between;
+}

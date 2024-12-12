@@ -1,0 +1,41 @@
+.main-banner {
+  position: relative;
+  height: 350px;
+}
+.main-banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+.title h1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+.title > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 7, 40, 0.414);
+  z-index: 8;
+}
